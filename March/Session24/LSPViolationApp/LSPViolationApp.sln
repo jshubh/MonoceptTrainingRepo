@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSPViolationApp", "LSPViolationApp.csproj", "{D5F57D2A-770C-42AD-96AB-A31B6DDE3403}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5F57D2A-770C-42AD-96AB-A31B6DDE3403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F57D2A-770C-42AD-96AB-A31B6DDE3403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F57D2A-770C-42AD-96AB-A31B6DDE3403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F57D2A-770C-42AD-96AB-A31B6DDE3403}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8D48CFD-6772-4D47-BB90-B9A1C3EEA3EC}
+	EndGlobalSection
+EndGlobal

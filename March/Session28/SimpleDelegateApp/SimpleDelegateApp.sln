@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDelegateApp", "SimpleDelegateApp\SimpleDelegateApp.csproj", "{FA1CBA6A-3A99-413F-AD7B-68D65DE4BEDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocOnDelegate", "..\..\Session27\Assignment\PocOnDelegatesln\PocOnDelegate\PocOnDelegate.csproj", "{BED3C497-1A19-443C-8D84-D1DB68F155D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA1CBA6A-3A99-413F-AD7B-68D65DE4BEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1CBA6A-3A99-413F-AD7B-68D65DE4BEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1CBA6A-3A99-413F-AD7B-68D65DE4BEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1CBA6A-3A99-413F-AD7B-68D65DE4BEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED3C497-1A19-443C-8D84-D1DB68F155D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED3C497-1A19-443C-8D84-D1DB68F155D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED3C497-1A19-443C-8D84-D1DB68F155D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED3C497-1A19-443C-8D84-D1DB68F155D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1ACBE806-57E4-409D-813F-6779849FCF6B}
+	EndGlobalSection
+EndGlobal

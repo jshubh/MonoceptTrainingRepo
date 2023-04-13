@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POCStrategyDesignPattern", "POCStrategyDesignPattern.csproj", "{5D343279-6CDA-4D1C-AE30-C2A02E8D16C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D343279-6CDA-4D1C-AE30-C2A02E8D16C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D343279-6CDA-4D1C-AE30-C2A02E8D16C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D343279-6CDA-4D1C-AE30-C2A02E8D16C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D343279-6CDA-4D1C-AE30-C2A02E8D16C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E978FC64-9839-44AD-AAB4-2D3903C60F0C}
+	EndGlobalSection
+EndGlobal

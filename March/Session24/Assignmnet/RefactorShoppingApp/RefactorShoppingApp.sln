@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactorShoppingApp", "RefactorShoppingApp.csproj", "{3D38F3A0-1012-4FFE-B17F-7339D4B142DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D38F3A0-1012-4FFE-B17F-7339D4B142DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D38F3A0-1012-4FFE-B17F-7339D4B142DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D38F3A0-1012-4FFE-B17F-7339D4B142DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D38F3A0-1012-4FFE-B17F-7339D4B142DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33F825D8-8EEC-411A-BC6A-3A156B1DEC19}
+	EndGlobalSection
+EndGlobal

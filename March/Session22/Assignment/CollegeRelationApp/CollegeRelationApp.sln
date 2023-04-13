@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollegeRelationApp", "CollegeRelationApp.csproj", "{B1EA087A-C842-461F-9A73-D5AF6B68C5E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarInventoryApp", "..\GuitarInventoryApp\GuitarInventoryApp.csproj", "{1E134876-A5E7-4610-B974-B38C10259DCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1EA087A-C842-461F-9A73-D5AF6B68C5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1EA087A-C842-461F-9A73-D5AF6B68C5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1EA087A-C842-461F-9A73-D5AF6B68C5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1EA087A-C842-461F-9A73-D5AF6B68C5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E134876-A5E7-4610-B974-B38C10259DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E134876-A5E7-4610-B974-B38C10259DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E134876-A5E7-4610-B974-B38C10259DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E134876-A5E7-4610-B974-B38C10259DCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63F0DE64-8EAF-4E64-AA33-1E654FBC408E}
+	EndGlobalSection
+EndGlobal

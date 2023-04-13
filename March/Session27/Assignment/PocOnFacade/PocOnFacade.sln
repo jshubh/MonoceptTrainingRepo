@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PocOnFacade", "PocOnFacade\PocOnFacade.csproj", "{5C136C04-C9D6-46C5-9334-9913C341824D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C136C04-C9D6-46C5-9334-9913C341824D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C136C04-C9D6-46C5-9334-9913C341824D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C136C04-C9D6-46C5-9334-9913C341824D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C136C04-C9D6-46C5-9334-9913C341824D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58272CB5-C62A-47BF-8EDD-4832E2D0DE46}
+	EndGlobalSection
+EndGlobal
