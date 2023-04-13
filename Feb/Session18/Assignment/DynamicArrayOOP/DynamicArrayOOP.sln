@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicArrayOOP", "DynamicArrayOOP\DynamicArrayOOP.csproj", "{A0E9234B-88E7-461F-941A-1A0FC90C8A56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0E9234B-88E7-461F-941A-1A0FC90C8A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E9234B-88E7-461F-941A-1A0FC90C8A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E9234B-88E7-461F-941A-1A0FC90C8A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E9234B-88E7-461F-941A-1A0FC90C8A56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C4164A4-4DE8-45CB-B4D8-92AF8038F5AB}
+	EndGlobalSection
+EndGlobal

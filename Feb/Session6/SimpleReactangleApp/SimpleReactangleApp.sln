@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RectangleEncapsulationApp", "..\RectangleEncapsulationApp\RectangleEncapsulationApp.csproj", "{17E5E827-2A83-46CB-9E83-F117582854DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleApp", "..\CircleApp\CircleApp.csproj", "{1DD1D8F2-C437-48B8-9786-D99BE572C34A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17E5E827-2A83-46CB-9E83-F117582854DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E5E827-2A83-46CB-9E83-F117582854DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E5E827-2A83-46CB-9E83-F117582854DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E5E827-2A83-46CB-9E83-F117582854DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD1D8F2-C437-48B8-9786-D99BE572C34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD1D8F2-C437-48B8-9786-D99BE572C34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD1D8F2-C437-48B8-9786-D99BE572C34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD1D8F2-C437-48B8-9786-D99BE572C34A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {60198B97-971B-4962-915A-47664C06D0E1}
+	EndGlobalSection
+EndGlobal
