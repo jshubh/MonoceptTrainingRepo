@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="user-input">Enter your text:</label>
+	<input id="user-input" type="text" onkeypress="updateParagraph()" />
+    <br>
+    <label for="color-choice">color</label>
+    <input id="color-choice" type="text" onchange="colorchange()" />
+    <br>
+    <label for="bgcolor-choice">bgcolor</label>
+    <input id="bgcolor-choice" type="text" onchange="bgColorChange()" />
+
+
+	<p id="output-paragraph"></p>
+
+	<script>
+		function updateParagraph() {
+			
+			var input = document.getElementById('user-input');
+			var inputValue = input.value.toUpperCase();
+
+		
+			var output = document.getElementById('output-paragraph');
+			output.textContent = inputValue;
+		}
+        function colorchange()
+        {
+            var input=document.getElementById('color-choice')
+            var colorValue=colorValue.value.toLowerCase();
+            var textelemet=document.getElementById('output-paragraph')
+            var validColors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple', 'pink', 'brown'];
+            if (validColors.includes(colorValue)) {
+			
+              textelemet.style.color = colorValue;
+        } else {
+            
+            textelemet.style.color = 'white';
+        }
+
+        }
+        function bgColorChange()
+        {
+            var colorInput = document.getElementById('bgcolor-choice');
+			var colorValue = colorInput.value.toLowerCase();
+
+			var validColors = ['red', 'green', 'blue', 'yellow', 'orange', 'purple', 'pink', 'brown'];
+			if (validColors.includes(colorValue)) {
+			
+				document.body.style.backgroundColor = colorValue;
+			} else {
+				
+				document.body.style.backgroundColor = 'white';
+			}
+
+        }
+        </script>
+   
+
+
+
+    
+</body>
+</html>

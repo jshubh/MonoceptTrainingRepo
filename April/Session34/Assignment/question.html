@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>MCQ Questions</title>
+  </head>
+  <body>
+    <h1>MCQ Questions</h1>
+    
+    <form>
+      <fieldset>
+        <legend>Question 1:</legend>
+        <p>Is the sky blue?</p>
+        <label>
+          <input type="radio" name="q1" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="q1" value="no">
+          No
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Question 2:</legend>
+        <p>Are dogs mammals?</p>
+        <label>
+          <input type="radio" name="q2" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="q2" value="no">
+          No
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Question 3:</legend>
+        <p>Is the earth flat?</p>
+        <label>
+          <input type="radio" name="q3" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="q3" value="no">
+          No
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Question 4:</legend>
+        <p>Is water wet?</p>
+        <label>
+          <input type="radio" name="q4" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="q4" value="no">
+          No
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Question 5:</legend>
+        <p>Is the moon made of cheese?</p>
+        <label>
+          <input type="radio" name="q5" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="q5" value="no">
+          No
+        </label>
+        <button type="submit" id="submit">Submit</button>
+        <p id="pid">Scoreis</p>
+      </fieldset>
+      
+      <button type="button" id="prevBtn">Previous</button>
+      <button type="button" id="nextBtn">Next</button>
+      
+    </form>
+    
+    <script>
+      const form = document.querySelector('form');
+      const prevBtn = document.querySelector('#prevBtn');
+      const nextBtn = document.querySelector('#nextBtn');
+      const submitBtn=document.getElementById("");
+      
+      let currentQuestion = 0;
+      
+      
+   
+      form.querySelectorAll('fieldset').forEach((fieldset, index) => {
+        if (index !== currentQuestion) {
+          fieldset.style.display = 'none';
+        }
+      });
+       const prevbtne = document.querySelector('#prevBtn');
+      prevBtn.style.display = 'none';
+      
+      // Go to the previous question
+      prevBtn.addEventListener('click', () => {
+       
+     if (currentQuestion > 0) {
+          form.querySelectorAll('fieldset')[currentQuestion].style.display = 'none';
+          currentQuestion--;
+          form.querySelectorAll('fieldset')[currentQuestion].style.display = 'block';
+        }
+      });
+      
+      // Go to the next question
+      nextBtn.addEventListener('click', () => {
+        if (currentQuestion < form.querySelectorAll('fieldset').length - 1) {
+          
+   form.querySelectorAll('fieldset')[currentQuestion].style.display = 'none';
+   currentQuestion++;
+  form.querySelectorAll('fieldset')[currentQuestion].style.display = 'block';
+  }
+  });
+
+
+
+const answers = {
+  q1: 'yes',
+  q2: 'yes',
+  q3: 'no',
+  q4: 'no',
+  q5: 'no'
+};
+
+
+form.addEventListener('submit', event => {
+  event.preventDefault(); 
+
+  let score = 0; 
+
+  
+  Object.keys(answers).forEach(key => {
+    const selectedAnswer = form.elements[key].value;
+    if (selectedAnswer === answers[key]) {
+      score++;
+    }
+  });
+
+  
+  if (score === Object.keys(answers).length) {
+    alert(`Congratulations! You got all ${score} questions correct!`);
+  } else {
+    const correctAnswers = Object.entries(answers)
+      .map(([key, value]) => `<li>${key}: ${value}</li>`)
+      .join('');
+    alert(`You got ${score} questions correct. The correct answers are: <ul>${correctAnswers}</ul>`);
+  }
+
+ var myParagraph = document.querySelector('#pid');
+myParagraph.textContent = score;
+});
+ 
+
+</script>
+
+  </body>
+</html>

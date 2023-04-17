@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            font-size: 16px;
+            height: auto;
+            padding: 10px;
+            border: 1px solid black;
+            overflow-y: auto;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <h1>Text Capitalize V1</h1>
+    <input type="text" id="inputBox" placeholder="Enter your text here">
+    <br><br>
+    <div class="box">
+        <p id="outputBox"></p>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#inputBox').on('keyup', function () {
+                $('#outputBox').text($(this).val().toUpperCase());
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Session Storage PoC</title>
+  </head>
+  <body>
+    <h1>Save Username and Password to Session Storage</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br>
+
+      <button type="button" onclick="saveData()">Save</button>
+    </form>
+
+    <h1>Retrieve Username and Password from Session Storage</h1>
+    <p>Username: <span id="username-display"></span></p>
+    <p>Password: <span id="password-display"></span></p>
+
+    <script>
+      // Save data to Session Storage
+      function saveData() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        sessionStorage.setItem("username", username);
+        sessionStorage.setItem("password", password);
+      }
+
+      // Retrieve and display data from Session Storage
+      var username = sessionStorage.getItem("username");
+      var password = sessionStorage.getItem("password");
+
+      document.getElementById("username-display").textContent = username;
+      document.getElementById("password-display").textContent = password;
+    </script>
+  </body>
+</html>

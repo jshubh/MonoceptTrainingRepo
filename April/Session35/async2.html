@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Asnc1</h1>
+    <script>
+        var DataService=function()
+        {
+            var service={};
+            service.getData=function(successfnPtr,errorfnPtr)
+            {
+                var n=Math.random()*10;
+                if(n>5)
+                {
+                successfnPtr({status:"sucess",data:n});
+                return
+                }
+        errorfnPtr ({status:"Errot",message:"Data is low"+n});
+            }
+            return service;
+        }();
+
+        DataService.getData(whenSccess,whenError);
+
+        function whenSccess(data)
+        {
+            console.log("success callback");
+
+            console.log(data)
+        }
+        function whenError(errordata)
+        {
+            console.log("error callback");
+
+            console.log(errordata)
+        }
+    
+
+        console.log("end of script")
+
+    </script>
+</body>
+</html>

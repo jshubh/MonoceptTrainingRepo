@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nemo Game</title>
+  <style>
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border: 1px solid black;
+      display: inline-block;
+      margin: 5px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+    }
+
+    .box.nemo {
+      background-image: url("nemo.png");
+      background-size: cover;
+    }
+
+    .box.wrong {
+      background-color: red;
+    }
+
+    .box.correct {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div id="rules">
+    <h2>Rules</h2>
+    <p>Here are the rules of the game:</p>
+    <ol>
+      <li>Click the button below to generate a random number between 1 and 20.</li>
+      <li>Select one of the boxes on the grid.</li>
+      <li>If your selected box matches the random number, Nemo will appear in that box. Otherwise, the box will change color.</li>
+    </ol>
+    <button id="hide-rules-btn">Hide Rules</button>
+  </div>
+  <div id="grid">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+  <button id="generate-number-btn">Generate Number</button>
+  <script>
+    
+    function generateRandomNumber() {
+      return Math.floor(Math.random() * 20) + 1;
+    }
+
+    
+    document.getElementById("generate-number-btn").addEventListener("click", function() {
+
+      var randomNumber = generateRandomNumber();
+
+      var boxes = document.getElementsByClassName("box");
+      for (var i = 0; i < boxes.length; i++) {
+        var boxNumber = i + 1;
+        if (boxNumber === randomNumber) {
+          boxes[i].classList.add("nemo", "correct");
+        } else {
+          boxes[i].classList.add("wrong");
+        }
+      }
+    });
+
+    
+    document.getElementById("hide-rules-btn").addEventListener("click", function() {
+
+      document.getElementById("rules").style.display = "none";
+    });
+  </script>
+</body>
+</html>

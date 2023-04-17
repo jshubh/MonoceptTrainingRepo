@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Immediately invoing function expressiom</h1>
+    <script>
+        (function f1(){
+            console.log("inside f1");
+            
+        }());
+    </script>
+    <script>
+         (function f2(){
+            console.log("inside f2");
+        
+        })();
+    </script>
+     <script>
+         var f3=function(){
+           console.log("inside f3");
+       
+       }();
+   </script>
+
+</body>
+</html>

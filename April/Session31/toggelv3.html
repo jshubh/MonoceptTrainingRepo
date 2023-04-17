@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <button id="btnToggle" onclick="toggleImage(event)">Toggle Image</button>
+        
+            <img id="imgPicture" src="https://assets.thehansindia.com/h-upload/2022/05/14/1292195-ai.webp">
+        </div>
+        
+        <script>
+            var imgPic = document.querySelector("#imgPicture");
+            var btnToggle = document.querySelector("#btnToggle");
+        
+            function toggleImage() {
+                if (imgPic.style.display === "none") {
+                    imgPic.style.display = "block";
+                    btnToggle.style.display = "none";
+                    console.log("Image is shown");
+                } else {
+                    imgPic.style.display = "none";
+                    btnToggle.style.display = "block";
+                    console.log("Image is hidden");
+                }
+            }
+        </script>
+        
+</body>
+</html>

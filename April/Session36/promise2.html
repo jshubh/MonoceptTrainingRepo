@@ -1,0 +1,62 @@
+               
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Asnc1</h1>
+    <script>
+        var DataService=function()
+        {
+             var service={};
+          
+        
+            service.getData=function()
+            {
+                return new Promise(function(resolvePtr,rejectPtr){
+
+                
+                var n=Math.random()*10;
+                console.log("inside promise")
+                if(n>5)
+                {
+            resolvePtr({status:"sucess",data:n});
+                }
+                else
+                {
+                 rejectPtr({status:"success",message:"data is low"+no})
+                }
+            
+            });
+            return service;
+        }();
+        
+       
+        var promise1=DataService.getData()
+        var promise2=promise1.then((resp)=>{
+            console.log("promise1 then",resp)
+            return 10;
+        })
+
+        var promise3 =promise2.then((d)=>{
+            console.log("promise2 then",d)
+            console.log(d)
+            return d*10;
+
+        })
+        var promise4=promise3.then((d)=>{
+            console.log("promise3 then",d);
+
+        });
+        promise4.catch((err)=>
+            console.log("promise 4 catch",err)
+        )
+       
+    }
+    </script>
+</body>
+</html>

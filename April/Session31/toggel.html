@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="btnHide" onclick="hideImage(event)">Hide</button>
+        <button id="btnShow" onclick="showImage(event)">Show</button>
+
+        <img id="imgPicture" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.peakpx.com%2Fen%2Fsearch%3Fq%3Dnature&psig=AOvVaw23uYaEVWF-cAa5dxmM_OFL&ust=1680785671058000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJiwuNjkkv4CFQAAAAAdAAAAABAE">
+    </div>
+    <script>
+         var imgPic=document.querySelector("imgPicture")
+        function hideImage()
+        {
+            console.log("inside hide")
+           
+           // console.log(imgPoc)
+
+           imgPic.style.visibilty='hidden'
+        }
+        function showImage()
+        {
+             imgPic.style.visibilty='visible'
+            console.log("inside show")
+        }
+    </script>
+</body>
+</html>

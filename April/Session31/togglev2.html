@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="imgPicture" src="https://assets.thehansindia.com/h-upload/2022/05/14/1292195-ai.webp">
+   <input type="checkbox" id="show-image"  onclick="toggleImage()">
+
+   <script>
+   function toggleImage() {
+    
+    var checkbox = document.getElementById('show-image');
+    var isChecked = checkbox.checked;
+
+
+    var image = document.getElementById('imgPicture');
+    image.style.display = isChecked ? 'block' : 'none';
+}
+</script>
+    
+</body>
+</html>

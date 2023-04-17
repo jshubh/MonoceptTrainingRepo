@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            font-size: 16px;
+            height: auto;
+            padding: 10px;
+            border: 1px solid black;
+            overflow-y: auto;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Text Capitalize V2</h1>
+    <select id="colorSelect">
+        <option value="select">Select text color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <select id="bgColorSelect">
+        <option value="select">Select background color</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+        <option value="lightblue">Light Blue</option>
+    </select>
+    <select id="fontSizeSelect">
+        <option value="select">Select font size</option>
+        <option value="16px">16</option>
+        <option value="20px">20</option>
+        <option value="24px">24</option>
+    </select>
+    <br><br>
+    <input type="text" id="inputBox" placeholder="Enter your text here">
+    <br><br>
+    <div class="box">
+        <p id="outputBox"></p>
+    </div>
+    <script>
+        $(document).ready(function() {
+            var inputBox = $("#inputBox");
+            var outputBox = $("#outputBox");
+            var colorSelect = $("#colorSelect");
+            var bgColorSelect = $("#bgColorSelect");
+            var fontSizeSelect = $("#fontSizeSelect");
+
+            colorSelect.change(function() {
+                var selectedColor = colorSelect.val();
+                if (selectedColor != "select") {
+                    outputBox.css("color", selectedColor);
+                } else {
+                    outputBox.css("color", "black");
+                }
+            });
+
+            bgColorSelect.change(function() {
+                var selectedColor = bgColorSelect.val();
+                if (selectedColor != "select") {
+                    outputBox.css("background-color", selectedColor);
+                } else {
+                    outputBox.css("background-color", "white");
+                }
+            });
+
+            fontSizeSelect.change(function() {
+                var selectedFontSize = fontSizeSelect.val();
+                if (selectedFontSize != "select") {
+                    outputBox.css("font-size", selectedFontSize);
+                } else {
+                    outputBox.css("font-size", "16px");
+                }
+            });
+
+            inputBox.on("input", function() {
+                outputBox.text($(this).val().toUpperCase());
+                colorSelect.change();
+            });
+        });
+    </script>
+</body>
+</html>

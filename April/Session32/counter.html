@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>counter app</h1>
+    <button id="btnPlus">+</button>
+    <button id="btnMinus">-</button>
+    <h1 id="h1Display"></h1>
+    <script>
+     ( function()
+        {
+            var btnPlus=document.querySelector("#btnPlus");
+        var btnMinus=document.querySelector("#btnMinus");
+          var h1Display=document.querySelector("#h1Display")
+        var counter=10;
+
+
+        btnPlus.addEventListerner("click",function()
+        {
+            counter+=1;
+            updateDisplay()
+        })
+        btnMinus.addEventListener("click",function()
+        {
+            if(counter>0)
+            {
+            counter-=1;
+            updateDisplay();
+            }
+
+        })
+
+        function updateDisplay()
+        {
+          h1display.innerHTML+=counter;
+
+          console.log(counter)
+        }
+
+        }
+       )();
+
+    </script>
+</body>
+</html>

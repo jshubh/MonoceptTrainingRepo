@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this pointer</h1>
+
+
+    <script>
+              function Customer(id,name)
+              {
+
+               console.log(this)
+               this.customerId=id;
+               this.customerName=name;
+               var self=this;
+                
+                this.getDetails=function()
+                {
+                console.log(self)
+                    return "id:"+self.customerId+"name is :"+self.customerName
+                }
+              }
+
+        var sachin=new  Customer(101,"Ekta")
+        console.log(sachin.getDetails())
+        
+        var getDetails_ptr=sachin.getDetails;
+       // getDetails_ptr=getDetails_ptr.bind(sachin);
+
+        console.log(getDetails_ptr())
+
+        console.log(sachin.getDetails())
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <form>
+      <label for="task">Task:</label>
+      <input type="text" id="task" name="task"><br><br>
+      <label for="time">Time:</label>
+      <input type="text" id="time" name="time"><br><br>
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description"><br><br>
+      <input type="button" value="Add Task" onclick="addTask()">
+    </form>
+    <br>
+    <ul id="tasks"></ul>
+    
+    <script>
+      let taskList = [];
+
+      function addTask() {
+        let task = document.getElementById("task").value;
+        let time = document.getElementById("time").value;
+        let description = document.getElementById("description").value;
+        
+        let taskObj = {
+          task: task,
+          time: time,
+          description: description
+        };
+        
+        taskList.push(taskObj);
+        document.getElementById("tasks").innerHTML += "<li>" + task + " - " + time + " - " + description + "</li>";
+      }
+      
+      function getTaskList() {
+        return taskList;
+      }
+    </script>
+  </body>
+</html>

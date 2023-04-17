@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student data</title>
+</head>
+<body>
+    <h1>Student data</h1>
+    <form>
+        <fieldset>
+            Name <input type="text" id="name">
+            <label>
+                <br>
+              Gender
+                <input type="radio" name="gender" value="Male">
+                Male
+              </label>
+              <label>
+                <input type="radio" name="gender" value="Female">
+                Female
+              </label>
+              <br>
+              Branch
+              <select name="branch" id="branch">
+                <option value="Select">Select</option>
+                <option value="IT">IT</option>
+                <option value="Cse">CSE</option>
+                <option value="Mech">Mech</option>
+              </select>
+              <br>
+              CGPA <input type="number" name="cgpa" id="cgpa">
+              <br>
+              <br>
+              <button type="button" id="submit" onclick="addStudent()">Add</button>
+            </fieldset>
+
+              <h1>Data of college students</h1>
+              <fieldset>
+              <table id="studentTable">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Branch</th>
+                    <th>CGPA</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="studentTableBody"></tbody>
+              </table>
+              </fieldset>
+    </form>
+
+    <script>
+        function addStudent() {
+        
+            const name = document.getElementById("name").value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const branch = document.getElementById("branch").value;
+            const cgpa = document.getElementById("cgpa").value;
+
+    
+            const newRow = document.createElement("tr");
+
+        
+            newRow.innerHTML = `<td>${name}</td><td>${gender}</td><td>${branch}</td><td>${cgpa}</td>`;
+
+            
+            const removeButtonColumn = document.createElement("td");
+            const removeButton = document.createElement("button");
+            removeButton.textContent = "Remove";
+            removeButton.addEventListener("click", function() {
+                newRow.remove();
+            });
+            removeButtonColumn.appendChild(removeButton);
+            newRow.appendChild(removeButtonColumn);
+
+            
+            const studentTableBody = document.getElementById("studentTableBody");
+            studentTableBody.appendChild(newRow);
+        }
+    </script>
+</body>
+</html>

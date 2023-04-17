@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Name Array</title>
+  </head>
+  <body>
+    <h1>Name Array</h1>
+
+    <p id="name"></p>
+
+    <button type="button" id="prevBtn">Previous</button>
+    <button type="button" id="nextBtn">Next</button>
+
+    <script>
+      
+      const names = ['Anekant', 'Eketa', 'Ravi', 'Manjunath', 'Shubh',"Vikrant"];
+
+
+      let currentName = 0;
+
+      // Hide the Previous button since we're at the beginning
+      const prevBtn = document.querySelector('#prevBtn');
+      prevBtn.style.display = 'none';
+
+      // Show the current name
+      const nameEl = document.querySelector('#name');
+      nameEl.textContent = names[currentName];
+
+      // Go to the previous name
+      prevBtn.addEventListener('click', () => {
+        if (currentName > 0) {
+          currentName--;
+          nameEl.textContent = names[currentName];
+          if (currentName === 0) {
+            prevBtn.style.display = 'none';
+          }
+          nextBtn.style.display = 'block';
+        }
+      });
+
+      // Go to the next name
+      const nextBtn = document.querySelector('#nextBtn');
+      nextBtn.addEventListener('click', () => {
+        if (currentName < names.length - 1) {
+          currentName++;
+          nameEl.textContent = names[currentName];
+          if (currentName === names.length - 1) {
+            nextBtn.style.display = 'none';
+          }
+          prevBtn.style.display = 'block';
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDo List</title>
+</head>
+<body>
+	<h1>My ToDo List</h1>
+	<input type="text" id="todo-input">
+	<button onclick="addTodo()">Add</button>
+	<ul id="todo-list"></ul>
+    <button onclick="remove()">Remove</button>
+
+	<script>
+		function addTodo() {
+			var todoInput = document.getElementById("todo-input");
+			var todoList = document.getElementById("todo-list");
+
+			var newTodo = document.createElement("li");
+			newTodo.innerHTML = todoInput.value;
+
+			
+			todoList.appendChild(newTodo);
+			todoInput.value = "";
+		}
+        function remove()
+        {
+            var removeButton = document.getElementById("todo-list");
+		removeButton.innerHTML="";
+ }
+	</script>
+</body>
+</html>

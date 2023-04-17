@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+
+    <script>
+       save();
+        display()
+     stringfiacationAndParse();
+     stringfiacationAndParse1();
+     function stringfiacationAndParse1()
+     {
+            var obj={id:101,location:'Mumbai'};
+            console.log(typeof obj)
+            console.log(JSON.stringify(obj))
+            console.log(typeof JSON.stringify(obj))
+
+            var obj2=JSON.parse(JSON.stringify(obj))
+            console.log(obj2.id)
+            console.log(obj2.location)
+     }
+     function stringfiacationAndParse()
+     {
+            var obj=[{id:101,location:'Mumbai'},{id:102,location:'hyderabad'}]
+            console.log(typeof obj)
+            console.log(JSON.stringify(obj))
+            console.log(typeof JSON.stringify(obj))
+
+            var obj2=JSON.parse(JSON.stringify(obj))
+            console.log(obj2.id)
+            obj2.forEach(element => {
+                console.log(element.id,element.location)
+            });
+
+     }
+    
+           
+        function display()
+        {
+          //  var students=localStorage[]
+            var studentlist=JSON.parse(localStorage['monocept.students']);
+    
+            studentlist.forEach((s)=>{
+                console.log(s.id +' '+s.name)
+            })
+           
+            
+        }
+        
+       function save()
+       {
+        var students=[]
+        students.push({id:1,name:'shubh'})
+        students.push({id:2,name:'Ekta'})
+        students.push({id:3,name:'vikrant'})
+        console.log(students)
+
+        //localStorage['monocept.students']=students;
+
+        localStorage['monocept.students']=JSON.stringify(students)
+       }
+       display();
+    </script>
+</body>
+</html>

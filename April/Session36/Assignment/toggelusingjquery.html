@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show/Hide Image with jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <div>
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" id="myImage" style="display: none;">
+  </div>
+
+  <button id="showButton">Show Image</button>
+  <button id="hideButton">Hide Image</button>
+
+  <script>
+    $(document).ready(function() {
+
+      $("#showButton").click(function() {
+        $("#myImage").show();
+      });
+
+      $("#hideButton").click(function() {
+        $("#myImage").hide();
+      });
+
+    });
+  </script>
+
+</body>
+</html>
